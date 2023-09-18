@@ -14,13 +14,16 @@ function App() {
   return (
     <>
       <div className='Container'>
-       {/* <h1>Testimonials</h1> */}
 
+        <div className='firstbatch'>
+        <div className='subbatchOne'>  
        <article className='block1'>
-         <div>
+         <div className='header'>
           <img src={imageOne} alt="image of a man"  />
+          <div>
           <h4>Daniel Clifford</h4>
           <p>Verified Graduate</p>
+          </div>
          </div>
 
          <h1>I recieved a job offer mid-course, and the subjects i learned were current, 
@@ -36,10 +39,12 @@ function App() {
        </article>
 
        <article className='block2'>
-       <div>
+       <div className='header'>
           <img src={imageTwo} alt="image of a man"  />
+          <div>
           <h4>Jonathan Walters</h4>
           <p>Verified Graduate</p>
+          </div>
          </div>
 
          <h1>The team was very supportive and kept me motivated</h1>
@@ -48,12 +53,54 @@ function App() {
           engineer for a big company. This was one of the best investments I've made in myself."
          </p>
        </article>
+        </div>
+       
+      <div className='subbatchTwo'>
+       <article className='block4'>
+       <div className='header'>
+          <img src={imageFour} alt="image of a man"  />
+          <div>
+          <h4>Jeanette Harmon</h4>
+          <p>Verified Graduate</p>
+          </div>
+         </div>
 
-       <article className='block3'>
-       <div>
+         <h1>An overall wonderful and rewarding experience</h1>
+
+         <p>"Thank you for the wonderful experience! I now have a job i really enjoy, and make a good living while
+          doing something i love."
+         </p>
+       </article>
+
+       <article className='block5'>
+       <div className='header'>
+          <img src={imageFive} alt="image of a man"  />
+          <div> 
+          <h4>Patrick Abrams</h4>
+          <p>Verified Graduate</p>
+           </div>
+         </div>
+
+         <h1>Awesome teaching support from TAs who did the bootcamp themselves.
+          Getting guidance from them and learning from their experiences was easy.
+         </h1>
+
+         <p>"The staff seem genuinely concerned about my progress which i find really refreshing. The program 
+          gave me the confidence necessary to be able to go out in the world and present myself as a capable junior
+          developer. The standard is above the rest. You will get the personal attention you need from an incredible
+          community of smart and amazing people."
+         </p>
+       </article>
+       </div>
+      </div>
+
+      <article className='block3'>
+       <div className='header'>
           <img src={imageThree} alt="image of a man"  />
+          <div>
           <h4>Kira Whittle</h4>
           <p>Verified Graduate</p>
+          </div> 
          </div>
 
          <h1>Such a life-changing experience. Highly recommended!</h1>
@@ -69,38 +116,6 @@ function App() {
          </p>
        </article>
 
-
-       <article className='block4'>
-       <div>
-          <img src={imageFour} alt="image of a man"  />
-          <h4>Jeanette Harmon</h4>
-          <p>Verified Graduate</p>
-         </div>
-
-         <h1>An overall wonderful and rewarding experience</h1>
-
-         <p>"Thank you for the wonderful experience! I now have a job i really enjoy, and make a good living while
-          doing something i love."
-         </p>
-       </article>
-
-       <article className='block5'>
-       <div>
-          <img src={imageFive} alt="image of a man"  />
-          <h4>Patrick Abrams</h4>
-          <p>Verified Graduate</p>
-         </div>
-
-         <h1>Awesome teaching support from TAs who did the bootcamp themselves.
-          Getting guidance from them and learning from their experiences was easy.
-         </h1>
-
-         <p>"The staff seem genuinely concerned about my progress which i find really refreshing. The program 
-          gave me the confidence necessary to be able to go out in the world and present myself as a capable junior
-          developer. The standard is above the rest. You will get the personal attention you need from an incredible
-          community of smart and amazing people."
-         </p>
-       </article>
       </div>
       
     </>
