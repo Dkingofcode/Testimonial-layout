@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600;700&display=swap');
+
+
 *{
   margin: 0;
   padding: 0;
@@ -6,15 +10,15 @@
 }
 
 body{
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  background-color: hsl(210, 46%, 95%);
 }
 
 .Container{
   width: 100%;
   font-size: 0.9rem;
-  border: 3px solid;
   padding: 3rem;
-  display: grid;
+  display: flex;
   height: 100vh;
   row-gap: 0rem;
   column-gap: 0rem;
@@ -24,64 +28,87 @@ body{
 }
 
 .firstbatch{
-  border: 5px solid;
   display: grid;
-  width: 66em;
-  gap: 0rem;
+  width: 66%;
+  gap: 1rem;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(1, 1fr);
 }
 
 .subbatchOne{
-  border: 1px solid red;
   display: flex;
   gap: 1rem;
+
 }
 
 .subbatchTwo{
-  border: 1px solid red;
   display: flex;
   gap: 1rem;
 }
 
 .block1{
-  border: 2px solid;
+  box-shadow: 0 10px 10px 0 rgb(0, 0, 0, 0.5);
   border-radius: 1rem;
-  width: 42em;
+  width: 62%;
   height: 20em;
   padding: 0.4rem 0.4rem;
+  color: white;
+  background-color: hsl(263, 55%, 52%);
+  padding: 1rem;
 }
 
 .block2{
-  border: 2px solid;   
+  box-shadow: 0 10px 10px 0 rgb(0, 0, 0, 0.5);   
   border-radius: 1rem;
-  width: 20em;
+  width: 30%;
   height: 20em;
+  color: white;
+  background-color: hsl(217, 19%, 35%);
+  padding: 1rem;
 }
 
 .block3{
-  border: 1px solid;
+  box-shadow: 0 10px 10px 0 rgb(0, 0, 0, 0.5);
   border-radius: 1rem;
   width: 20em;
+  padding: 1rem;
+  color: hsl(219, 29%, 14%);
+  background-color: hsl(0, 0%, 100%);
 }
 
 .block4{
-  border: 2px solid;
+  box-shadow: 0 10px 10px 0 rgb(0, 0, 0, 0.5);
   border-radius: 1rem;
-  width: 20em;
+  width: 40%;
   height: 18em;
+  padding: 1rem;
+  color: hsl(217, 19%, 35%);
+  background-color: hsl(0, 0%, 100%);
 }
 
 .block5{
-  border: 2px solid;  
+  box-shadow: 0 10px 10px 0 rgb(0, 0, 0, 0.5);  
   border-radius: 1rem;
-  width: 43em;
+  width: 63%;
   height: 18em;
+  color: white;
+  padding: 1rem;
+  background-color: hsl(219, 29%, 14%);
 }
 
 
 article div{
   border-radius: 1rem;
+}
+
+article  > h1{
+  font-size: 1.3rem;
+  margin-bottom: 0.89rem;
+}
+
+article > p{
+  color: gray;
+
 }
 
  img{
@@ -93,7 +120,144 @@ article div{
   gap: 1rem;
 }
 
+.header > div > p{
+ opacity: 50%;
+ color: hsl(210, 46%, 95%);
+ /* hsl(0, 0%, 81%); */
+}
 
+
+
+@media screen and (max-width: 1200px){
+  body{
+    background-color: aqua;
+  }
+
+  article  > h1{
+    font-size: 1rem;
+    margin-bottom: 0.89rem;
+  }
+  
+  article > p{
+    color: gray;
+    font-size: 10px;  
+  }
+
+  .block3{
+    box-shadow: 0 10px 10px 0 rgb(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    width: 17em;
+    padding: 1rem;
+    color: hsl(219, 29%, 14%);
+    background-color: hsl(0, 0%, 100%);
+  }
+  
+}
+
+@media screen and (max-width: 900px){
+  body{
+    background-color: black;
+  }
+
+   
+.Container{
+  width: 100%;
+  font-size: 0.9rem;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0rem;
+  column-gap: 0rem;
+  gap: 1rem;
+}
+
+.firstbatch{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 3em;
+  gap: 1rem;
+}
+
+.subbatchOne{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+}
+
+.subbatchTwo{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+
+.block1{
+  box-shadow: 0 10px 10px 0 rgb(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  width: 90%;
+  height: 30em;
+  padding: 0.4rem 0.4rem;
+  color: white;
+  background-color: hsl(263, 55%, 52%);
+  padding: 1rem;
+}
+
+.block2{
+  box-shadow: 0 10px 10px 0 rgb(0, 0, 0, 0.5);   
+  border-radius: 1rem;
+  width: 70%;
+  height: 20em;
+  color: white;
+  background-color: hsl(217, 19%, 35%);
+  padding: 1rem;
+}
+
+.block3{
+  box-shadow: 0 10px 10px 0 rgb(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  width: 70%;
+  height: 50em;
+  margin-top: 89rem;
+  padding: 1rem;
+  color: hsl(219, 29%, 14%);
+  background-color: hsl(0, 0%, 100%);
+}
+
+.block4{
+  box-shadow: 0 10px 10px 0 rgb(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  width: 70%;
+  height: 18em;
+  padding: 1rem;
+  color: hsl(217, 19%, 35%);
+  background-color: hsl(0, 0%, 100%);
+}
+
+.block5{
+  box-shadow: 0 10px 10px 0 rgb(0, 0, 0, 0.5);  
+  border-radius: 1rem;
+  width: 98%;
+  height: 30em;
+  color: white;
+  padding: 1rem;
+  background-color: hsl(219, 29%, 14%);
+}
+
+article  > h1{
+  font-size: 1.3rem;
+  margin-bottom: 0.89rem;
+}
+
+article > p{
+  color: gray;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+
+}
 
 /* # Front-end Style Guide
 
