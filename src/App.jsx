@@ -13,8 +13,8 @@ function App() {
 
   return (
     <>
-      <div>
-       <h1>Testimonials</h1>
+      <div className='Container'>
+       {/* <h1>Testimonials</h1> */}
 
        <article className='block1'>
          <div>
@@ -59,7 +59,13 @@ function App() {
          <h1>Such a life-changing experience. Highly recommended!</h1>
 
          <p>"Before joining the bootcamp. I've never written a line of code. I needed 
-          some structure from professionals who can help me learn programming 
+          some structure from professionals who can help me learn programming step by step.
+          I was encouraged to enroll by a former student of theirs who can only say wonderful
+          things about the program. The entire curriculum and staff did not disappoint. They were
+          very hands-on and i never had to wait long for assistance. The agile team project, in particular,
+          was outstanding. It took my learning to the next level in a way that no tutorial could ever have.
+          In fact, I've often referred to it during interviews as an example of my development experience. 
+          It certainly helped me land a job as a full-stack developer after recieving multiple offers. 100% recommend!"
          </p>
        </article>
 
@@ -70,6 +76,12 @@ function App() {
           <h4>Jeanette Harmon</h4>
           <p>Verified Graduate</p>
          </div>
+
+         <h1>An overall wonderful and rewarding experience</h1>
+
+         <p>"Thank you for the wonderful experience! I now have a job i really enjoy, and make a good living while
+          doing something i love."
+         </p>
        </article>
 
        <article className='block5'>
@@ -78,6 +90,16 @@ function App() {
           <h4>Patrick Abrams</h4>
           <p>Verified Graduate</p>
          </div>
+
+         <h1>Awesome teaching support from TAs who did the bootcamp themselves.
+          Getting guidance from them and learning from their experiences was easy.
+         </h1>
+
+         <p>"The staff seem genuinely concerned about my progress which i find really refreshing. The program 
+          gave me the confidence necessary to be able to go out in the world and present myself as a capable junior
+          developer. The standard is above the rest. You will get the personal attention you need from an incredible
+          community of smart and amazing people."
+         </p>
        </article>
       </div>
       
